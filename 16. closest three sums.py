@@ -14,7 +14,8 @@ def closest3Sum(nums, target):
                 k -= 1
             else:
                 j += 1
+    return res
 
 
 if __name__ == '__main__':
-    print(closest3Sum([-2, -1, 0, 1, 7, 19, 23, -47, 10], 15))
+    print(closest3Sum([11, 22, 84, 74, 23, 789, 56, -19, -49, -227, -13], 100))
