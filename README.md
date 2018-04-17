@@ -135,17 +135,26 @@ Inspired by [here](https://zhuanlan.zhihu.com/p/35178331)
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Launch (GDB)",
+            "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "targetArchitecture": "x86",
-            "program": "${workspaceRoot}\\${fileBasename}.exe",
-            "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64\\mingw64\\bin\\gdb.exe",
+            "program": "${workspaceRoot}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceFolder}",
+            "environment": [],
             "externalConsole": true,
-            "preLaunchTask": "g++"
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/Program Files/mingw-w64/x86_64/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build"
         }
     ]
 }
+```
