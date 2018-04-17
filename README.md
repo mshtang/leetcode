@@ -45,7 +45,7 @@ Inspired by [here](https://zhuanlan.zhihu.com/p/35178331)
     "version": 3
 }
 ```
-## Step2: setup `tasks.json` to build and run
+## Step 2: setup `tasks.json` to build and run
 
 ```json
 {
@@ -122,6 +122,7 @@ Inspired by [here](https://zhuanlan.zhihu.com/p/35178331)
 }
 ```
 > ctrl+shift+B: to build
+> 
 > ctrl+shift+P: from command palette choose Run Task
 
 ## Step 3: setup `launch.json` to debug
