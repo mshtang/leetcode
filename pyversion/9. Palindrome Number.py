@@ -5,7 +5,7 @@ def isPalindrome(x):
     while x > res:
         res = res * 10 + x % 10
         x = x // 10
-    return ((res == x) or (res//10 == x))
+    return ((res == x) or (res // 10 == x))
 
 
 if __name__ == '__main__':
