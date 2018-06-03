@@ -40,6 +40,6 @@ int trapRain2(std::vector<int> &height)
 int main()
 {
     std::vector<int> height{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    std::cout << trapRain(height) << std::endl;
+    std::cout << trapRain2(height) << std::endl;
     std::cin.get();
 }
