@@ -36,3 +36,4 @@
 
 # side_order directory
 /side_order/*.*
+/side_order/algs4-data/*.*
